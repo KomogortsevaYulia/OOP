@@ -3,6 +3,7 @@ package com.company;
 import java.io.*;
 
 public class WorkWithFile {
+    //чтение из файла
     public static String strFromTxtFile(String filename){
         String s=null;
         try(BufferedReader br=new BufferedReader(new FileReader(filename))){
@@ -13,6 +14,8 @@ public class WorkWithFile {
         }
         return s;
     }
+
+    //запись в файл
     public static void strToTxtFile(String str, String filename){
 
         try(BufferedWriter br=new BufferedWriter(new FileWriter(filename))){
@@ -22,4 +25,5 @@ public class WorkWithFile {
             System.out.println("Ошибка записи");
         }
     }
+
 }
