@@ -1,5 +1,4 @@
 package com.company;
-
 class Strings {
     private String S;
 
@@ -7,7 +6,7 @@ class Strings {
         this.S = S;
     }
     public Strings() {                                             //конструктор по умолчанию
-        this.S = "";
+        this.S = null;
     }
     public Strings(Strings S) {                               //конструктор копирования
         this.S = S.S;
@@ -28,15 +27,15 @@ class Strings {
         return center;
     }
     public static String  getResult1(String S) {                    //метод выполняющий задание 1
-        int center=GetCenter(S);                                   //нахождение центрального индекса
+        int center = GetCenter(S);//нахождение центрального индекса
+        String[] arr = S.split(" ");
+        String rez=null;
         //нахождение слова из строки от центрального символа влево и вправо до пробела
         String results = S.substring(S.lastIndexOf(" ", center), S.indexOf(" ", center));
-        String rez;
         if (!results.contains(" ")) {                          //если центральный символ равен пробелу
-            rez="Центрального слова не существует";//то центрального слова не существует
-        }
-        else {                                                     //иначе
-            rez="Центральное слово:" + results;    //центральное слово найдено
+            rez = "Центрального слова не существует";//то центрального слова не существует
+        } else {                                                     //иначе
+            rez = "Центральное слово:" + results;    //центральное слово найдено
         }
         return rez;
     }
