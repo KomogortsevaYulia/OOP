@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b6ca3903-6cc3-42e3-a592-e15517cc5262" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1l3pSF4bnzosQwgCBQLwcAaAyDx" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/OOP-main/¦Ю¦Ю¦Я 4 ¦¬¦-¦-¦-/4" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Юлия\Институт\2 курс\OOP\4 лаба\src\com\company\1" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.Main" />
+      <module name="4 лаба" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b6ca3903-6cc3-42e3-a592-e15517cc5262" name="Default Changelist" comment="" />
+      <created>1606835633139</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1606835633139</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="441" y="0" key="#com.intellij.ide.util.MemberChooser" timestamp="1606850582675">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="441" y="0" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1606850582675" />
+    <state x="431" y="249" width="504" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1606840069338">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="431" y="249" width="504" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.728@0.0.1366.728" timestamp="1606840069338" />
+    <state x="347" y="53" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606840078363">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="347" y="53" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1606840078363" />
+    <state x="410" y="63" key="FileChooserDialogImpl" timestamp="1607007492557">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="410" y="63" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1607007492557" />
+    <state width="1311" height="41" key="GridCell.Tab.0.bottom" timestamp="1607027791257">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1311" height="41" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1607027791257" />
+    <state width="1311" height="41" key="GridCell.Tab.0.center" timestamp="1607027791257">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1311" height="41" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1607027791257" />
+    <state width="1311" height="41" key="GridCell.Tab.0.left" timestamp="1607027791256">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1311" height="41" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1607027791256" />
+    <state width="1311" height="41" key="GridCell.Tab.0.right" timestamp="1607027791257">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1311" height="41" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1607027791257" />
+    <state x="189" y="73" width="961" height="604" key="dock-window-1" timestamp="1606943404144">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="189" y="73" width="961" height="604" key="dock-window-1/0.0.1366.728@0.0.1366.728" timestamp="1606943404144" />
+    <state x="386" y="74" key="refactoring.ChangeSignatureDialog" timestamp="1606985066257">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="386" y="74" key="refactoring.ChangeSignatureDialog/0.0.1366.728@0.0.1366.728" timestamp="1606985066257" />
+    <state x="262" y="-1" width="840" height="1034" key="search.everywhere.popup" timestamp="1606966225505">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="262" y="-1" width="840" height="1034" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1606966225505" />
+  </component>
+</project>
