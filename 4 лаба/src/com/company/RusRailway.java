@@ -38,39 +38,47 @@ public class RusRailway {
         boolean rez = false;
         //перебор записей листа
         for (var transport : RusRailwayTransports) {
-            //если элемент списка принадлежит классу CarTransport
-            if (transport instanceof CarTransport) {
-                //если элемент списка совпадает с элементом которых запрашивали
-                if (transport.getCondition().equals(transp.getCondition()) &&
-                        transport.getSpeed() == transp.getSpeed() &&
-                        ((CarTransport) transport).getYears() == ((CarTransport) transp).getYears() &&
-                        ((CarTransport) transport).getModel().equals(((CarTransport) transp).getModel())) {
-                    //возвращаем правду
-                    rez = true;
-                }
-            }
-            //если элемент списка принадлежит классу TrainTransport
-            if (transport instanceof TrainTransport) {
-                //если элемент списка совпадает с элементом которых запрашивали
-                if (((TrainTransport) transport).getNumber() == ((TrainTransport) transp).getNumber() &&
-                        ((TrainTransport) transport).getType().equals(((TrainTransport) transp).getType()) &&
-                        ((TrainTransport) transport).getCarriage() == ((TrainTransport) transp).getCarriage() &&
-                        transport.getCondition().equals(transp.condition) && transport.getSpeed() == transp.getSpeed()) {
-                    //возвращаем правду
-                    rez = true;
-                }
-            }
-            //если элемент списка принадлежит классу ExpressTrain
-            if (transport instanceof ExpressTrain) {
-                //если элемент списка совпадает с элементом которых запрашивали
-                if (((ExpressTrain) transport).getNumber() == ((ExpressTrain) transp).getNumber() &&
-                        ((ExpressTrain) transport).getType().equals(((ExpressTrain) transp).getType()) &&
-                        ((ExpressTrain) transport).getCarriage() == ((ExpressTrain) transp).getCarriage() &&
-                        transport.getCondition().equals(transp.getCondition()) &&
-                        transport.getSpeed() == transp.getSpeed()) {
-                    //возвращаем правду
-                    rez = true;
-                }
+            switch (key){
+                case 1:
+                    //если элемент списка принадлежит классу CarTransport
+                    if (transport instanceof CarTransport) {
+                        //если элемент списка совпадает с элементом которых запрашивали
+                        if (transport.getCondition().equals(transp.getCondition()) &&
+                                transport.getSpeed() == transp.getSpeed() &&
+                                ((CarTransport) transport).getYears() == ((CarTransport) transp).getYears() &&
+                                ((CarTransport) transport).getModel().equals(((CarTransport) transp).getModel())) {
+                            //возвращаем правду
+                            rez = true;
+                        }
+                    }
+                    break;
+                case 2:
+                    //если элемент списка принадлежит классу TrainTransport
+                    if (transport instanceof TrainTransport) {
+                        //если элемент списка совпадает с элементом которых запрашивали
+                        if (((TrainTransport) transport).getNumber() == ((TrainTransport) transp).getNumber() &&
+                                ((TrainTransport) transport).getType().equals(((TrainTransport) transp).getType()) &&
+                                ((TrainTransport) transport).getCarriage() == ((TrainTransport) transp).getCarriage() &&
+                                transport.getCondition().equals(transp.condition) && transport.getSpeed() == transp.getSpeed()) {
+                            //возвращаем правду
+                            rez = true;
+                        }
+                    }
+                    break;
+                case 3:
+                    //если элемент списка принадлежит классу ExpressTrain
+                    if (transport instanceof ExpressTrain) {
+                        //если элемент списка совпадает с элементом которых запрашивали
+                        if (((ExpressTrain) transport).getNumber() == ((ExpressTrain) transp).getNumber() &&
+                                ((ExpressTrain) transport).getType().equals(((ExpressTrain) transp).getType()) &&
+                                ((ExpressTrain) transport).getCarriage() == ((ExpressTrain) transp).getCarriage() &&
+                                transport.getCondition().equals(transp.getCondition()) &&
+                                transport.getSpeed() == transp.getSpeed()) {
+                            //возвращаем правду
+                            rez = true;
+                        }
+                    }
+                    break;
             }
         }
         //возвращаем "правду" если нашли, и "ложь" если не нашли
