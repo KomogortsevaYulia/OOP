@@ -8,8 +8,8 @@ public class Main {
         //создаем записи
         i.add(new CarTransport("Toyota",2010,"В гараже",85));
         i.add(new CarTransport("BMW",2010,"В пути",110));
-        i.add(new TrainTransport(100 ,"Пассажирский",12,"В пути",85));
-        i.add(new TrainTransport(1 ,"Пассажирский",21,"Ремонт",90));
+        i.add(new TrainTransport(100 ,"Грузовой",12,"В пути",85));
+        i.add(new TrainTransport(1 ,"Почтовый",21,"Ремонт",90));
         i.add(new ExpressTrain(25 ,"Пассажирский",2,"В пути",150));
         i.add(new ExpressTrain(12 ,"Грузовой",15,"В гараже",140));
             int key1;
