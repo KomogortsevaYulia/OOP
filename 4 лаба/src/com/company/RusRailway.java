@@ -8,12 +8,25 @@ public class RusRailway {
     public void add(Transport transport) {
         this.RusRailwayTransports.add(transport);
     }
+
     //вывод списка/массива/листа
     public void print() {
-        for (Transport transport:RusRailwayTransports) {
-            System.out.println(transport.OutputInfo());
+        int i=1;
+        for (var transport : RusRailwayTransports)
+        {
+            System.out.println("Запись №"+i+":\n"+transport.OutputInfo());
+            i++;
         }
     }
+    //вывод одного элемента списка/массива листа
+    public void print1(int id) {
+        for (var transport : RusRailwayTransports) {
+            if (transport.getId()==id){
+                System.out.println("Запись №"+id+":\n"+RusRailwayTransports.get(id-1).OutputInfo());
+            }
+        }
+    }
+
     //геттер
     public Transport getTransport(int id) {
         for (Transport tr:RusRailwayTransports) {
@@ -31,7 +44,7 @@ public class RusRailway {
     public void record(Transport transport, String conditionNew){
         transport.setCondition(conditionNew);
         System.out.println("Измененный:" );
-        System.out.println(transport.OutputInfo());
+        print1(transport.getId());
     }
     //метод для поиска по целому обьекту
     public  boolean search(int key,Transport transp) {
@@ -100,28 +113,28 @@ public class RusRailway {
                         if (whatCriterion == 1) {
                             if (((CarTransport) transport).getModel().equals(criterion)) {
                                 result = true;
-                                System.out.println(((CarTransport) transport).OutputInfo());
+                                print1(transport.getId());
                             }
                         }
                         else
                         if (whatCriterion == 2) {
                             if (((CarTransport) transport).getYears() ==Integer.parseInt(criterion)) {
                                 result = true;
-                                System.out.println(((CarTransport) transport).OutputInfo());
+                                print1(transport.getId());
                             }
                         }
                         else
                         if (whatCriterion == 3) {
                             if (transport.getCondition().equals(criterion)) {
                                 result = true;
-                                System.out.println(((CarTransport) transport).OutputInfo());
+                                print1(transport.getId());
                             }
                         }
                         else
                         if (whatCriterion == 4) {
                             if (transport.getSpeed() == Integer.parseInt(criterion)) {
                                 result = true;
-                                System.out.println(((CarTransport) transport).OutputInfo());
+                                print1(transport.getId());
                             }
                         }
                     }
@@ -137,35 +150,35 @@ public class RusRailway {
                         if (whatCriterion == 1) {
                             if (((TrainTransport) transport).getNumber()==Integer.parseInt(criterion)) {
                                 result = true;
-                                System.out.println(((TrainTransport) transport).OutputInfo());
+                                print1(transport.getId());
                             }
                         }
                         else
                         if (whatCriterion == 2) {
                             if (((TrainTransport) transport).getType().equals(criterion)) {
                                 result = true;
-                                System.out.println(((TrainTransport) transport).OutputInfo());
+                                print1(transport.getId());
                             }
                         }
                         else
                         if (whatCriterion == 3) {
                             if (((TrainTransport) transport).getCarriage()==Integer.parseInt(criterion)) {
                                 result = true;
-                                System.out.println(((TrainTransport) transport).OutputInfo());
+                                print1(transport.getId());
                             }
                         }
                         else
                         if (whatCriterion == 4) {
                             if (transport.getCondition().equals(criterion)) {
                                 result = true;
-                                System.out.println(((TrainTransport) transport).OutputInfo());
+                                print1(transport.getId());
                             }
                         }
                         else
                         if (whatCriterion == 5) {
                             if (transport.getSpeed() == Integer.parseInt(criterion)) {
                                 result = true;
-                                System.out.println(((TrainTransport) transport).OutputInfo());
+                                print1(transport.getId());
                             }
                         }
                     }
@@ -181,35 +194,35 @@ public class RusRailway {
                         if (whatCriterion == 1) {
                             if (((ExpressTrain) transport).getNumber()==Integer.parseInt(criterion)) {
                                 result = true;
-                                System.out.println(((ExpressTrain) transport).OutputInfo());
+                                print1(transport.getId());
                             }
                         }
                         else
                         if (whatCriterion == 2) {
                             if (((ExpressTrain) transport).getType().equals(criterion)) {
                                 result = true;
-                                System.out.println(((ExpressTrain) transport).OutputInfo());
+                                print1(transport.getId());
                             }
                         }
                         else
                         if (whatCriterion == 3) {
                             if (((ExpressTrain) transport).getCarriage()==Integer.parseInt(criterion)) {
                                 result = true;
-                                System.out.println(((ExpressTrain) transport).OutputInfo());
+                                print1(transport.getId());
                             }
                         }
                         else
                         if (whatCriterion == 4) {
                             if (transport.getCondition().equals(criterion)) {
                                 result = true;
-                                System.out.println(((ExpressTrain) transport).OutputInfo());
+                                print1(transport.getId());
                             }
                         }
                         else
                         if (whatCriterion == 5) {
                             if (transport.getSpeed() == Integer.parseInt(criterion)) {
                                 result = true;
-                                System.out.println(((ExpressTrain) transport).OutputInfo());
+                                print1(transport.getId());
                             }
                         }
                     }
