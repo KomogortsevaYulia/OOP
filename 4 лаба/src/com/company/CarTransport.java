@@ -21,7 +21,7 @@ public class CarTransport extends Transport {
     //переопределенный метод для вывода информации
     @Override
     public String OutputInfo() {
-        StringBuilder str=new StringBuilder("Запись №"+this.getId()+". Автомобиль    ");
+        StringBuilder str=new StringBuilder("Автомобиль    ");
         str.append("Модель: "+this.getModel()+";  ");
         str.append("Год выпуска: "+this.getYears()+";  ");
         str.append("Состояние: "+this.getCondition()+";  ");
