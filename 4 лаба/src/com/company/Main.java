@@ -2,16 +2,16 @@ package com.company;
 
 public class Main {
     //наш лист,с которым будем работать
-    public static RusRailway i=new RusRailway();
+    public static RusRailway List =new RusRailway();
 
     public static void main(String[] args) {
         //создаем записи
-        i.add(new CarTransport("Toyota",2010,"В гараже",85));
-        i.add(new CarTransport("BMW",2010,"В пути",110));
-        i.add(new TrainTransport(100 ,"Грузовой",12,"В пути",85));
-        i.add(new TrainTransport(1 ,"Почтовый",21,"Ремонт",90));
-        i.add(new ExpressTrain(25 ,"Пассажирский",2,"В пути",150));
-        i.add(new ExpressTrain(12 ,"Грузовой",15,"В гараже",140));
+        List.add(new CarTransport("Toyota",2010,"В гараже",85));
+        List.add(new CarTransport("BMW",2010,"В пути",110));
+        List.add(new TrainTransport(100 ,"Грузовой",12,"В пути",85));
+        List.add(new TrainTransport(1 ,"Почтовый",21,"Ремонт",90));
+        List.add(new ExpressTrain(25 ,"Пассажирский",2,"В пути",150));
+        List.add(new ExpressTrain(12 ,"Грузовой",15,"В гараже",140));
             int key1;
             do {
                 System.out.println("Имеется список транспортных средств компании РЖД,выберите действие:");
@@ -26,7 +26,7 @@ public class Main {
                 switch (key1) {
                     case 1:
                         //вывод листа
-                        i.print();
+                        List.print();
                         break;
                     case 2:
                         //добавить запись
@@ -58,12 +58,12 @@ public class Main {
         System.out.println("Запись №");
         int id = CheckInput.InputInt();
         //если запись ,номер которой ввел пользователь, существует
-        if(id< i.size()||(id>0)) {
+        if(id< List.size()||(id>0)) {
             System.out.print("Изменить состояние на:");
             //вызов метода изменения записи(элемент списка ,на что менять)
-            i.record(i.getTransport(id),CheckInput.InputStr());
+            List.record(List.getTransport(id),CheckInput.InputStr());
         }
-        if (id> i.size()||(id<0)) System.out.println("Нет такой записи");
+        if (id> List.size()||(id<0)) System.out.println("Нет такой записи");
     }
     //метод для удаления записи
     private static void remove() {
@@ -72,11 +72,11 @@ public class Main {
         //чтение номера записи
         int id=CheckInput.InputInt();
         //если запись,номер которой ввел пользователь, существует
-        if(id<= i.size()||(id>0)) {
+        if(id<= List.size()||(id>0)) {
             //вызов метода удаления записи(элемент списка)
-            i.remove(i.getTransport(id));
+            List.remove(List.getTransport(id));
         }
-        if (id> i.size()||(id<=0)) System.out.println("Нет такой записи");
+        if (id> List.size()||(id<=0)) System.out.println("Нет такой записи");
     }
     //метод для поиска записи
     private static void search(){
@@ -101,9 +101,10 @@ public class Main {
                     key=CheckInput.InputInt();
                 }
                 //вызывается метод проверки есть ли такая запись в листе
-                if (i.search(key,CheckInput.Input(key)) == true) {
+                if (List.search(key,CheckInput.Input(key))) {
                     System.out.println("Запись найдена");
                 }
+                else System.out.println("Запись не найдена");
                 break;
             }
             case 2: {
@@ -251,7 +252,7 @@ public class Main {
                 //далее считываем что будем искать в найденном критерии
                 criterion = CheckInput.InputStr();
                 //вызывается метод поиска по критерию (ключ-что ищем  машина,поезд,экпресс),какой критерий,что быдем искать в данном критерии)
-                if (i.searchCriterion(key, whatCriterion, criterion) == false) {
+                if (List.searchCriterion(key, whatCriterion, criterion) == false) {
                     System.out.println("Записи не найдены");
                 }
                 break;
@@ -261,11 +262,11 @@ public class Main {
                 System.out.print("Запись №");
                 int id = CheckInput.InputInt();
                 //если такая запись существует,то она найдена,и выводим ее
-                if(id< i.size()||(id>0)) {
+                if(id<= List.size()&(id>0)) {
                     System.out.println("Запись найдена");
-                    System.out.println(i.getTransport(id).OutputInfo());
+                    List.print1(id);
                 }
-                if (id> i.size()||(id<=0)) System.out.println("Нет такой записи");
+                else   System.out.println("Нет такой записи");
                 break;
             }
             case 0:
@@ -287,7 +288,7 @@ public class Main {
             key=CheckInput.InputInt();
         }
         if (key!=0 ){
-           i.add(CheckInput.Input(key));
+           List.add(CheckInput.Input(key));
             System.out.println("Запись добавлена");
         }
     }
