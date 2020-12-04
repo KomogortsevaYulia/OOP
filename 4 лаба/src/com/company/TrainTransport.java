@@ -27,7 +27,7 @@ public class TrainTransport extends Transport {
     //переопределенный метод для вывода информации
     @Override
     public String OutputInfo() {
-        StringBuilder str=new StringBuilder("Запись №"+this.getId()+".Поезд  ");
+        StringBuilder str=new StringBuilder("Поезд   ");
         str.append("Номер поезда: "+this.getNumber()+";  ");
         str.append("Тип: "+this.getType()+";  ");
         str.append("Количество вагонов: "+this.getCarriage()+";  ");
