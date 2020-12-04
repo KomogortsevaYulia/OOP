@@ -10,7 +10,7 @@ public class ExpressTrain extends TrainTransport {
     //переопределенный метод для вывода информации
     @Override
     public String OutputInfo() {
-        StringBuilder str=new StringBuilder("Запись №"+this.getId()+".Экспресс-поезд     ");
+        StringBuilder str=new StringBuilder("Экспресс-поезд     ");
         str.append("Номер экпресса: "+this.getNumber()+";  ");
         str.append("Тип: "+this.getType()+";  ");
         str.append("Количество вагонов: "+this.getCarriage()+";  ");
