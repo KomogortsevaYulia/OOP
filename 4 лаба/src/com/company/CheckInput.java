@@ -1,5 +1,4 @@
 package com.company;
-
 import java.util.Scanner;
 //класс для проверки ввода
 public class CheckInput {
