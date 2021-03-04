@@ -1,6 +1,7 @@
-
 package com.company;
-        import java.util.ArrayList;
+import com.sun.jdi.connect.Transport;
+
+import java.util.ArrayList;
 //класс для работы с динамическим массивом "Транспорт компании РЖД"
 public class RusRailway {
     private final static ArrayList<Transport> RusRailwayTransports=new ArrayList();
@@ -230,3 +231,4 @@ public class RusRailway {
         return this.RusRailwayTransports.size();
     }
 }
+
