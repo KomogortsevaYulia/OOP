@@ -1,5 +1,5 @@
 package com.company;
-import com.sun.jdi.connect.Transport;
+
 
 import java.util.ArrayList;
 //класс для работы с динамическим массивом "Транспорт компании РЖД"
@@ -9,6 +9,7 @@ public class RusRailway {
     public void add(Transport transport) {
         this.RusRailwayTransports.add(transport);
     }
+
     //вывод списка/массива/листа
     public void print() {
         int i=1;
@@ -26,6 +27,7 @@ public class RusRailway {
             }
         }
     }
+
     //геттер
     public Transport getTransport(int id) {
         for (Transport tr:RusRailwayTransports) {
@@ -38,6 +40,12 @@ public class RusRailway {
     //метод для удаления записи
     public void remove(Transport transport){
         this.RusRailwayTransports.remove(transport);
+    }
+    //метод для изменения записи
+    public void record(Transport transport, String conditionNew){
+        transport.setCondition(conditionNew);
+        System.out.println("Измененный:" );
+        print1(transport.getId());
     }
     //метод для поиска по целому обьекту
     public  boolean search(int key,Transport transp) {
@@ -231,4 +239,3 @@ public class RusRailway {
         return this.RusRailwayTransports.size();
     }
 }
-

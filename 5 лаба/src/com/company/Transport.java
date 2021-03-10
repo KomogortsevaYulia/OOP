@@ -1,7 +1,7 @@
 package com.company;
 //абстрактный класс(родитель)
 public abstract class Transport {
-    //поля и метод абстрактного класса,их наследуют дети и внуки
+    //поля и метод абстрактного класса,их наследую дети и внуки
     protected String condition;
     protected int speed;
     public  abstract String OutputInfo();
